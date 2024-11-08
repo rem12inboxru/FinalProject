@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Извлечение одного элемента</title>
+</head>
+<h2> Время извлечения одного элемента</h2>
+<body>
+<form method="post" >
+         {% csrf_token %}
+         <h3>Время извлечения одного элемента </h3>
+         <label for="id"> Введите id: </label>
+         <input type="number" name="id" maxlength="5" value="{{id}}" required><button type="submit"> Рассчитать </button>
+     </form>
+
+
+      <h1> {{z}}</h1>
+      <p></p>
+      <h2> Элемент:  {{data2}}</h2>
+</body>
+</html>

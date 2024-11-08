@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Извлечение элементов по фильтру</title>
+</head>
+<h2> Время извлечения элементов по фильтру</h2>
+<body>
+<form method="post" >
+         {% csrf_token %}
+         <h3>Время извлечения элементов по фильтру </h3>
+         <label for="lastprice"> Цена выше, чем: : </label>
+         <input type="number" name="lastprice" maxlength="10" value="{{lastprice}}" required><button type="submit"> Рассчитать </button>
+     </form>
+<h1>  {{a}}</h1>
+     <p> </p>
+     <h2> Список элементов  </h2>
+     <h4>
+         {% for i in data3 %}
+         <p> {{ i }} </p>
+         {% endfor %}</h4>
+
+</body>
+</html>
